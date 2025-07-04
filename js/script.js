@@ -22,4 +22,17 @@ for (let i = 0; i < invitedEmails.length; i++){
     isUserInvited = true;
   }
 }
+// Esco dal ciclo
+
+// Eseguo un ulteriore controllo sui dati ora salvati, in modo da permettere alla variabile isUserInvited, di mostrare un messaggio all'utente a seconda del risultato del primo controllo
+
+// Se la variabile 'isUserInvited' era stata cambiata nel precedente controllo a 'true' (quindi la mail è stata trovata) mostreremo questo messaggio:
+if (isUserInvited === true) {
+  console.log("Benvenuto! La tua email è presente nella lista degli invitati.");
+} 
+// Se la variabile 'isUserInvited' era rimasta invariata nel precedente controllo (quindi la mail NON è stata trovata) mostreremo questo messaggio:
+
+else {
+  console.log("Spiacente, la tua email non è nella lista degli invitati.");
+}
 
