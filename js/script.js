@@ -14,6 +14,6 @@ const userEmail = prompt("Inserisci la tua email:");
 
 let isUserInvited = false;
 
-
-
+// Eseguo il ciclo for, per scorrere la lista mail invitate
+for (let i = 0; i < invitedEmails.length; i++)
 
