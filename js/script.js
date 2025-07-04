@@ -15,5 +15,11 @@ const userEmail = prompt("Inserisci la tua email:");
 let isUserInvited = false;
 
 // Eseguo il ciclo for, per scorrere la lista mail invitate
-for (let i = 0; i < invitedEmails.length; i++)
+for (let i = 0; i < invitedEmails.length; i++){
+	// Eseguo il controllo di uguaglianza tra le [i] trovate dal for e il contenuto di userEmail
+  if (userEmail === invitedEmails[i]) {
+	// Se al controllo il contenuto di userEmail è uguale alla [i] trovata dal ciclo 'for', allora il valore di isUserInvited viene cambiato a 'true', altrimenti rimane invariato
+    isUserInvited = true;
+  }
+}
 
